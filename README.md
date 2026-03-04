@@ -1,4 +1,4 @@
-### Reinforcement_Q_Learning-Escape_Game_Environment
+# Reinforcement_Q_Learning-Escape_Game_Environment
 
 This project implements a **Q-Learning** agent that learns to navigate a grid-based escape game. The agent's goal is to collect coins and reach the goal while avoiding obstacles.
 
