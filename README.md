@@ -13,6 +13,7 @@ Q-Learning is a model-free, value-based Reinforcement Learning algorithm. It aim
 - **Action ($a$):** The agent can move in 4 directions: `0: Up`, `1: Down`, `2: Right`, `3: Left`.
 - **Reward ($r$):** The numerical feedback received from the environment after an action.
 
+<img width="620" height="309" alt="Q learning" src="https://github.com/user-attachments/assets/57fe4df7-a305-48b8-b436-0a5989c1119f" />
 
 ---
 
@@ -23,7 +24,8 @@ The core of Q-Learning is the **Bellman Equation**, which provides a recursive w
 
 The Q-table update rule is defined as:
 
-![bellmaneqn](https://github.com/user-attachments/assets/055c33ec-fad2-4784-8ffc-2862b927d148)
+![bellmaneqn](https://github.com/user-attachments/assets/a4606133-e656-4242-8c5d-231d475e20b3)
+
 
 
 #### Definitions:
@@ -36,5 +38,13 @@ The Q-table update rule is defined as:
 
 
 ---
+
+
+### 3. Epsilon-Greedy Method
+The **$\epsilon$-greedy method** is used to solve the **Exploration-Exploitation trade-off**.
+
+
+- **Exploration ($\epsilon$ probability)**: The agent chooses a random action to discover more about the environment.
+- **Exploitation ($1 - \epsilon$ probability)**: The agent chooses the action with the highest Q-value to maximize its reward.
 
 
