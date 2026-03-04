@@ -47,4 +47,15 @@ The **$\epsilon$-greedy method** is used to solve the **Exploration-Exploitation
 - **Exploration ($\epsilon$ probability)**: The agent chooses a random action to discover more about the environment.
 - **Exploitation ($1 - \epsilon$ probability)**: The agent chooses the action with the highest Q-value to maximize its reward.
 
+#### Epsilon Decay:
+To ensure the agent eventually converges to an optimal policy, we decrease $\epsilon$ over time:
+$$\epsilon \leftarrow \max(\epsilon_{min}, \epsilon \times \epsilon_{decay})$$
+This allows the agent to explore more at the beginning and exploit its knowledge more as it learns.
+
+
+---
+
+
+### 4. Reward Structure (Custom Environment)
+
 
