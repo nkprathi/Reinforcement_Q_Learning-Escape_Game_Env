@@ -24,3 +24,17 @@ The core of Q-Learning is the **Bellman Equation**, which provides a recursive w
 The Q-table update rule is defined as:
 
 ![bellmaneqn](https://github.com/user-attachments/assets/055c33ec-fad2-4784-8ffc-2862b927d148)
+
+
+#### Definitions:
+- **$Q(s, a)$**: The current value of taking action $a$ in state $s$.
+- **$\alpha$ (Alpha - Learning Rate)**: Determines how much of the new information will override the old information ($0 < \alpha \leq 1$).
+- **$r$**: The reward received after transitioning from state $s$ to $s'$.
+- **$\gamma$ (Gamma - Discount Factor)**: Determines the importance of future rewards ($0 \leq \gamma < 1$). A value close to 1 makes the agent strive for a long-term high reward.
+- **$\max_{a'} Q(s', a')$**: The estimate of the optimal future value at the next state $s'$.
+- **TD Error**: The segment $[r + \gamma \max_{a'} Q(s', a') - Q(s, a)]$ represents the **Temporal Difference Error**.
+
+
+---
+
+
