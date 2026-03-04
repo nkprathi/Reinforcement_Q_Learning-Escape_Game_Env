@@ -47,15 +47,40 @@ The **$\epsilon$-greedy method** is used to solve the **Exploration-Exploitation
 - **Exploration ($\epsilon$ probability)**: The agent chooses a random action to discover more about the environment.
 - **Exploitation ($1 - \epsilon$ probability)**: The agent chooses the action with the highest Q-value to maximize its reward.
 
-#### Epsilon Decay:
+![Epsilon Greedy Selection Algorithm](https://github.com/user-attachments/assets/c37ab0d8-7fd1-40d3-860e-b113d359c792)
+
+---
+
+### 4. Epsilon Decay:
 To ensure the agent eventually converges to an optimal policy, we decrease $\epsilon$ over time:
 $$\epsilon \leftarrow \max(\epsilon_{min}, \epsilon \times \epsilon_{decay})$$
 This allows the agent to explore more at the beginning and exploit its knowledge more as it learns.
 
+---
+
+### 5. Reward Structure (Custom Environment)
+
+- **Goal reached**: $+300$
+- **Power Up collected**: $+20$
+- **Coin collected**: $+10$
+- **Wall / Fence / Laser**: $-10$
+- **Bomb**: $-50$ (Immediate failure)
+- **Step Penalty**: $-1$ (Encourages efficiency)
 
 ---
 
+## 6. Technical Implementation
+- **State Space**: $12 \times 12 \times 256$ (Grid size + 8-bit coin mask)
 
-### 4. Reward Structure (Custom Environment)
+---
 
+## 7. Training Configuration
+
+<img width="800" height="600" alt="hyperparameters" src="https://github.com/user-attachments/assets/fc7fd8b2-5f04-4fb3-8296-2f740d593f50" />
+
+---
+
+## 8. Workflow
+
+<img width="765" height="451" alt="WorkFlow" src="https://github.com/user-attachments/assets/f993bb58-efb3-4c0d-82ff-ea7a8c7b334a" />
 
